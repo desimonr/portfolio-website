@@ -1,6 +1,93 @@
 /* Colors
 #FFFFFF
 #000000
+#2b2b2b
 #FF4242
+#ab2e2e
+#0000EE
+
  */
-font-family
+body {
+  background-color: #ffffff;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'M PLUS Rounded 1c'; sans-serif;
+  line-height: 1.4;
+  color: #FF4242;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+  }
+a {
+  color: #0000EE;
+  text-decoration: none;
+}
+a:visited {
+  color: #ab2e2e;
+}
+a:hover {
+  color: #ff4242;
+  text-decoration: underline;
+}
+a:focus {
+  color: #ab2e2e;
+  text-decoration: underline;
+}
+a:active {
+  color: #ab2e2e;
+}
+
+
+
+.button {
+  display: inline-block;
+  background-color: #2b2b2b;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom: 2px solid;
+  transition: .2s opacity;
+}
+.button:visited {
+  background-color: #4d4d4d;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #000000;
+  text-decoration: none;
+}
+.button:focus {
+  background-color: #000000;
+  text-decoration: none;
+}
+.button:active {
+  background-color: #000000;
+  text-decoration: none;
+}
