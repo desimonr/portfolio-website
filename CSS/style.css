@@ -80,6 +80,11 @@ a:active {
 }
 #work {}
 #contact {}
+.headshot {
+  max-width: 300px;
+  display: block;
+  margin:0 auto;
+  }
 
 .button {
   display: inline-block;
