@@ -42,6 +42,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -78,6 +79,9 @@ a:active {
   display: inline-block;
   width: 100%;
 }
+#about h2 {
+  margin-bottom: 0;
+}
 #work {}
 #contact {}
 .headshot {
@@ -104,22 +108,22 @@ a:active {
   text-decoration: none;
 }
 .button:hover {
-  background-color: #000000;
   text-decoration: none;
+  opacity: .8;
 }
 .button:focus {
-  background-color: #000000;
   text-decoration: none;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+  opacity: .8;
 }
 .button:active {
-  background-color: #000000;
   text-decoration: none;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+  opacity: .8;
 }
 
 /* Layout Styling */
@@ -128,6 +132,19 @@ a:active {
 }
 .row {
   margin: 25px 0;
+}
+.row:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.col-md-4 {
+  width: 100%;
+}
+.row.col-md-4 {
+  margin: 0 auto;
+  width: 90%;
+  float: none;
 }
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
@@ -168,4 +185,68 @@ nav > ul > li > a:focus {
 }
 nav > ul > li > a:active {
   color: #ab2e2e;
+}
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px;
+}
+
+/* Animation */
+@keyframes color-change {
+  0% {fill: blue}
+  50% {fill: red;}
+  100% {fill: yellow;}
+}
+@keyframes building-move {
+  from {transform: translate(0,0);}
+  to {transform: translate(2px,0);}
+}
+.strobe-buildings {
+animation: 1s color-change infinite alternate linear;
+}
+.orange-buildings {
+animation: 1s building-move infinite alternate linear;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding:20px 0 13px;
+  }
+  nav {
+    width:auto;
+    float: right;
+    margin-top: 4px;
+  }
+  #hero {
+      text-align: center;
+    }
+  #hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+.col-md-4 {
+  width: 33.33%;
+}
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-lg-6-left {
+  width: 60%;
+}
+.col-lg-6-left {
+  width: 40%;
+}
+}
+@media only screen and (min-width: 1440px) {
 }
