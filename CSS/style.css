@@ -24,11 +24,13 @@ header {
   -moz-box-shadow:    0px 5px 15px 0px rgba(50, 50, 50, 0.5);
   box-shadow:         0px 5px 15px 0px rgba(50, 50, 50, 0.5);
   position: relative;
+color: inherit;
   background-color: #2b2b2b;
 }
 h1, h2, h3, h4 {
-  font-family: 'M PLUS Rounded 1c' sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.4;
+background-color: inherit;
   color: #FF4242;
   font-weight: 700;
 }
@@ -56,21 +58,27 @@ img {
   width: 100%;
   }
 a {
+
+  background-color: inherit;
   color: #0000EE;
   text-decoration: none;
 }
 a:visited {
+background-color: inherit;
   color: #ab2e2e;
 }
 a:hover {
+background-color: inherit;
   color: #ff4242;
   text-decoration: underline;
 }
 a:focus {
+background-color: inherit;
   color: #ab2e2e;
   text-decoration: underline;
 }
 a:active {
+background-color: inherit;
   color: #ab2e2e;
 }
 .hero {
@@ -108,10 +116,12 @@ a:active {
   transition: .2s opacity;
 }
 .button:visited {
+color: inherit;
   background-color: #4d4d4d;
   text-decoration: none;
 }
 .button:hover {
+  background-color: #2b2b2b;
   text-decoration: none;
   opacity: .8;
 }
@@ -134,12 +144,17 @@ a:active {
 .container {
   padding: 0 15px;
 }
+.col-container {
+  padding: 0  15px;
+ width: 100%;
+}
 .iframe-container{
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
   display: inline-block;
+  border:0;
 }
 .iframe-container iframe{
   position: absolute;
@@ -202,20 +217,25 @@ nav > ul > li > a {
   padding: 0 0;
   text-transform: uppercase;
   font-weight: 500;
+background-color: inherit;
   color: #ff4242;
 }
 nav > ul > li > a:visited {
+background-color: inherit;
   color: #ab2e2e;
 }
 nav > ul > li > a:hover {
+background-color: inherit;
   color: #ff4242;
   text-decoration: underline;
 }
 nav > ul > li > a:focus {
+background-color: inherit;
   color: #ab2e2e;
   text-decoration: underline;
 }
 nav > ul > li > a:active {
+background-color: inherit;
   color: #ab2e2e;
 }
 [class*="col-"] {
@@ -282,6 +302,7 @@ animation: 1s building-move infinite alternate linear;
 .col-md-4 h3 {
   text-align: left;
 }
+}
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
@@ -296,7 +317,5 @@ animation: 1s building-move infinite alternate linear;
 }
 .col-lg-6-left {
   width: 40%;
-}
-}
-@media only screen and (min-width: 1440px) {
-}
+}}
+@media only screen and (min-width: 1440px) {}
